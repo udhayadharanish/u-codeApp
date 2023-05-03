@@ -97,7 +97,7 @@ def generate():
         return "Error"
 @app.route("/download")
 def download():
-    path = r"C:\Users\Abi-Bala\Desktop\newSoft\static\index.html"
+    path = r"static\index.html"
     return send_file(path,as_attachment=True)
 
 @app.route("/index")

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Your Website !</title>
+    <link rel="stylesheet" href="static/style/style.css">
+    <link rel="icon" type="image/x-icon" href="static/Images/downloadicon.png">
+</head>
+<style>
+  *{
+    text-align: center;
+  }
+  body{
+    background-image: "static/Images/background.webp";
+  }
+</style>
+<body>
+
+  <div class="header">
+
+    <img class="name" src="static/Images/logo.png" alt="" height="80px" width="80px" style="padding: 10px;">
+    <h1 class="name">
+       <span style="color: rgb(26, 95, 173);"> U </span>- CODE
+    </h1>
+    <h4 class="name">
+        The simple way to make <br> Stunning Websites
+    </h4>
+   
+
+
+
+  </div>
+  <br><br>
+      
+      <div>
+        <iframe src="static/index.html" frameborder="0" height="auto" width="auto"></iframe>
+      </div>
+      <a href="static/index.html" class="btn" style="text-decoration: none;">preview</a>
+      <form action="{{ url_for('download') }}">
+        <button class="btn">DOWNLOAD HTML FILE</button>
+      </form>
+</body>
+</html>
+

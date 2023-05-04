@@ -45,6 +45,7 @@ def generate():
 
         html = open("static/index.html","w")
         html.write("<!DOCTYPE html>\n<html lang='en'>\n<head>\n<meta charset='UTF-8'>\n<meta http-equiv='X-UA-Compatible' content='IE=edge'>\n<meta name='viewport' content='width=device-width, initial-scale=1.0'>\n<title>Website (U)</title>\n<link rel='icon' type='image/x-icon' href='Images/logo.png'>\n</head>\n<body>\n")
+        html.write("<style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&family=Ysabeau:wght@300&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&family=Satisfy&family=Ysabeau:wght@300&display=swap');\n</style>")
         html.write("<style>\n*{color:"+a['font-color']+";font-family:"+a["font-family"]+";text-align:center;}\nimg{border-radius:10px;height:250px;width:250px;}</style>")
         if(a["background-select"] == "color"):
             background_color = a["background"]
